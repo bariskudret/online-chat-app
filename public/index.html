@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chat</title>
+
+<!-- her kullanıcı sayfamızı giriş yaptığında soket işlemi başlıyacak
+ve böylelikle server ile bağlantı gerçekleşecek-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.7.4/socket.io.js" integrity="sha512-tE1z+95+lMCGwy+9PnKgUSIeHhvioC9lMlI7rLWU0Ps3XTdjRygLcy4mLuL0JAoK4TLdQEyP0yOl/9dMOqpH/Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+     <link rel="stylesheet" href="chat.css">
+
+</head>
+<body>
+    
+    <div id="chat-wrap">
+        <h2>KK Chat</h2>
+        <div id="chat-window">
+            <div id="output"></div>
+            <div id="feedback"></div>
+
+        </div>
+        <input type="text" id="sender" placeholder="Ad">
+        <input type="text" name="" id="message" placeholder="Mesaj">
+        <button id="submitBtn">Gonder</button>     
+    </div>
+
+
+<script src="chat.js" charset="UTF-8"></script>
+</body>
+</html>
